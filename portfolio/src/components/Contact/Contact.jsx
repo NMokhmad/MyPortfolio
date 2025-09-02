@@ -30,8 +30,8 @@ export default function Contact() {
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/NMokhmad', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/mokhmad-noutsoulkhanov-b74a56258/', label: 'LinkedIn' },
     { icon: Twitter, href: '#', label: 'Twitter' }
   ];
 
