@@ -5,22 +5,22 @@ import './Skills.css';
 const skillCategories = [
   {
     title: 'Frontend',
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js', 'Angular'],
+    skills: ['React', 'Tailwind CSS', 'HTML', 'CSS'],
     color: 'from-blue-500 to-cyan-500'
   },
   {
     title: 'Backend',
-    skills: ['Node.js', 'Python', 'Express', 'Django', 'PostgreSQL', 'MongoDB'],
+    skills: ['Node.js', 'Express','PostgreSQL', 'API RESTFUL','Sequelize'],
     color: 'from-purple-500 to-pink-500'
   },
   {
     title: 'Cloud & DevOps',
-    skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform', 'Nginx'],
+    skills: ['Docker learning ...','AWS learning ...'],
     color: 'from-emerald-500 to-teal-500'
   },
   {
     title: 'Tools & Others',
-    skills: ['Git', 'Jest', 'Webpack', 'GraphQL', 'Redis', 'Elasticsearch'],
+    skills: ['Git/Github', 'Postman', 'Insomnia', 'VS Code', 'Agile/Scrum'],
     color: 'from-orange-500 to-red-500'
   }
 ];
