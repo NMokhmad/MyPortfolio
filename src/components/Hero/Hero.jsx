@@ -30,11 +30,7 @@ export default function Hero() {
           
           <div className="space-y-4">
             <motion.h1 
-              className="text-6xl md:text-8xl font-bold text-white"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
+              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white text-center">
               Mokhmad Noutsoulkhanov
             </motion.h1>
             
