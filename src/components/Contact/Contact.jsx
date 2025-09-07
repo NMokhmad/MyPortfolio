@@ -152,7 +152,7 @@ export default function Contact() {
             </div>
             
             <div className="pt-8 border-t border-white/10">
-              <h3 className="text-white font-semibold mb-4">Follow Me</h3>
+              <h3 className="text-white font-semibold mb-4">Suivez moi</h3>
               <div className="flex space-x-4">
                 {socialLinks.map(({ icon: Icon, href, label }) => (
                   <motion.a

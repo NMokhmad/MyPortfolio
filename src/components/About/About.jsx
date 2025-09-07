@@ -5,10 +5,10 @@ import './About.css';
 
 export default function About() {
   const highlights = [
-    { icon: Code2, title: '12 months', desc: 'Development Experience' },
-    { icon: Rocket, title: '~10', desc: 'Projects Completed' },
-    { icon: Coffee, title: 'a lot', desc: 'Cups of Coffee' },
-    { icon: Lightbulb, title: 'Many', desc: 'Problems Solved' }
+    { icon: Code2, title: '12 mois', desc: 'Expérience' },
+    { icon: Rocket, title: '~10', desc: 'Projets complétés' },
+    { icon: Coffee, title: '+100', desc: 'tasse de café' },
+    { icon: Lightbulb, title: '+10', desc: 'Problème résolu' }
   ];
 
   return (
@@ -22,7 +22,7 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            About Me
+            À propos de moi
           </h2>
           <div className="h-1 w-16 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full" />
         </motion.div>
@@ -37,15 +37,12 @@ export default function About() {
           >
             <div className="prose prose-lg text-gray-300">
               <p className="text-xl leading-relaxed">
-                I'm a passionate fullstack developer with over 12 months of experience 
-                building scalable web applications. I love turning complex problems 
-                into simple, beautiful solutions.
+                Je suis un développeur fullstack passionné avec plus de 12 mois d'expérience dans la création d'applications web évolutives. J'aime transformer des problèmes complexes en solutions simples et élégantes.
               </p>
               <p className="text-lg leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, 
-                contributing to open-source projects, or sharing knowledge with the 
-                developer community. I believe in writing clean, maintainable code 
-                and creating exceptional user experiences.
+                Quand je ne code pas, vous me trouverez en train d'explorer de nouvelles technologies,
+                de contribuer à des projets open source ou de partager mes connaissances avec la communauté des développeurs.
+                Je crois en l"importance d'écrire un code propre et maintenable, ainsi que de créer des expériences utilisateurs exceptionnelles.
               </p>
             </div>
             

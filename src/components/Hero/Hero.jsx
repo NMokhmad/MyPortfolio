@@ -82,7 +82,7 @@ export default function Hero() {
       
       <motion.button
         onClick={scrollToAbout}
-        className="absolute bottom-40 left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-colors"
+        className="absolute bottom-50 left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-colors"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
         whileHover={{ scale: 1.1 }}

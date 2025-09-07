@@ -2,29 +2,36 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Smartphone, Globe, Database } from 'lucide-react';
 import './Projects.css';
+// Pour le challenge portfolio mettre la photo de son propre challenge et pareil pour Weather App plus tard
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.',
-    tech: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'AWS'],
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop',
+    title: 'Portfolio',
+    description: 'Personal developer portfolio built with React and Tailwind CSS. Showcases projects, skills, and contact form with a clean responsive design and smooth user experience.',
+    tech: ['React', 'Vitejs', 'TailwindCSS', 'Vercel'],
+    image: 'src/assets/Portfolio.png',
+    code: 'https://github.com/NMokhmad/Portfolio',
+    website: 'https://portfolio-gvp1.vercel.app/',
     icon: Globe,
     color: 'from-blue-500 to-purple-500'
   },
   {
-    title: 'Task Management App',
-    description: 'Collaborative project management tool built with Next.js and MongoDB. Real-time updates, team collaboration, file sharing, and advanced reporting features.',
-    tech: ['Next.js', 'MongoDB', 'Socket.io', 'Tailwind', 'Vercel'],
-    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
+    title: 'Boulangerie-du-parc',
+    description: 'E-commerce website for a local bakery built with React and Tailwind CSS. Product catalog with categories, detailed product pages, shopping cart, and responsive design optimized for mobile users.',
+    tech: ['React', 'Vitejs', 'TailwindCSS', 'Vercel'],
+    image: 'src/assets/Boulangerie.png',
+    code: 'https://github.com/NMokhmad/boulangerie-du-parc',
+    website: 'https://boulangerie-du-parc.vercel.app/',
     icon: Smartphone,
     color: 'from-emerald-500 to-cyan-500'
   },
   {
-    title: 'Analytics Dashboard',
-    description: 'Real-time analytics platform with data visualization, user behavior tracking, and automated reporting. Built with Python Django and React.',
-    tech: ['Python', 'Django', 'React', 'D3.js', 'Redis'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop',
+    title: 'Weather App',
+    description: 'Weather forecasting app built with React and Tailwind CSS. Displays real-time weather data with location search, dynamic backgrounds, and responsive design for an intuitive user experience.',
+    tech: ['React','TailwindCSS','Vitejs','Vercel'],
+    image: 'src/assets/weather.png',
+    code: 'https://github.com/NMokhmad/boulangerie-du-parc',
+    website: '',
     icon: Database,
     color: 'from-purple-500 to-pink-500'
   }
@@ -62,7 +69,7 @@ export default function Projects() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-48 object-cover object-top transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className={`absolute inset-0 bg-gradient-to-r ${project.color} opacity-20`} />
                 <div className="absolute top-4 right-4">
@@ -91,7 +98,7 @@ export default function Projects() {
                 
                 <div className="flex space-x-4">
                   <motion.a
-                    href="#"
+                    href={project.code}
                     className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -100,7 +107,7 @@ export default function Projects() {
                     <span className="text-sm font-medium">Code</span>
                   </motion.a>
                   <motion.a
-                    href="#"
+                    href={project.website}
                     className="flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}

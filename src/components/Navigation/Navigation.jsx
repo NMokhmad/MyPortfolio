@@ -4,11 +4,11 @@ import { Menu } from 'lucide-react';
 import './Navigation.css';
 
 const navItems = [
-  { id: 'hero', label: 'Home' },
-  { id: 'about', label: 'About' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'experience', label: 'Experience' },
+  { id: 'hero', label: 'Accueil' },
+  { id: 'about', label: 'À propos' },
+  { id: 'skills', label: 'Compétences' },
+  { id: 'projects', label: 'Projets' },
+  { id: 'experience', label: 'Expérience' },
   { id: 'contact', label: 'Contact' }
 ];
 
@@ -29,9 +29,8 @@ export default function Navigation({ activeSection }) {
         <div className="flex justify-between items-center">
           <motion.div 
             className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
-            whileHover={{ scale: 1.05 }}
-          >
-            Developer
+            whileHover={{ scale: 1.05 }}>
+            Mokhmad
           </motion.div>
           
           {/* Desktop Navigation */}
