@@ -23,8 +23,8 @@ export default function Navigation({ activeSection }) {
       className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-white/10"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.6 }}
-    >
+      transition={{ duration: 0.6 }}>
+        
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <motion.div 
@@ -51,7 +51,7 @@ export default function Navigation({ activeSection }) {
                 {item.label}
                 {activeSection === item.id && (
                   <motion.div
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-blue-400"
+                    className="absolute bottom-1 left-0 right-0 h-0.5 bg-blue-400"
                     layoutId="activeNav"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

@@ -9,7 +9,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -61,8 +61,7 @@ export default function Hero() {
             className="flex justify-center space-x-6 pt-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-          >
+            transition={{ duration: 0.8, delay: 1.2 }}>
             {[
               { Icon: Github, href: 'https://github.com/NMokhmad', label: 'GitHub' },
               { Icon: Linkedin, href: 'https://www.linkedin.com/in/mokhmad-noutsoulkhanov-b74a56258/', label: 'LinkedIn' },
@@ -73,8 +72,7 @@ export default function Hero() {
                 href={href}
                 className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300"
                 whileHover={{ scale: 1.1, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-              >
+                whileTap={{ scale: 0.95 }}>
                 <Icon size={20} />
               </motion.a>
             ))}
@@ -84,7 +82,7 @@ export default function Hero() {
       
       <motion.button
         onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-colors"
+        className="absolute bottom-40 left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-colors"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
         whileHover={{ scale: 1.1 }}
