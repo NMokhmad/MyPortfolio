@@ -10,7 +10,7 @@ const projects = [
     description: 'Personal developer portfolio built with React and Tailwind CSS. Showcases projects, skills, and contact form with a clean responsive design and smooth user experience.',
     tech: ['React', 'Vitejs', 'TailwindCSS', 'Vercel'],
     image: '/assets/Portfolio.png',
-    code: 'public/assets/Portfolio.png',
+    code: 'https://github.com/NMokhmad/Portfolio',
     website: 'https://portfolio-gvp1.vercel.app/',
     icon: Globe,
     color: 'from-blue-500 to-purple-500'
