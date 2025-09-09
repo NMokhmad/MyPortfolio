@@ -64,7 +64,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                  Your Name
+                  Votre Nom
                 </label>
                 <input
                   type="text"
@@ -80,7 +80,7 @@ export default function Contact() {
               
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                  Email Address
+                  Adresse électronique
                 </label>
                 <input
                   type="email"

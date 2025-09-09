@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useState, useEffect } from "react";
 import { ExternalLink, Github, Smartphone, Globe, Database } from 'lucide-react';
 import './Projects.css';
 // Pour le challenge portfolio mettre la photo de son propre challenge et pareil pour Weather App plus tard
