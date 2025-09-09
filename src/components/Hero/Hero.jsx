@@ -24,7 +24,9 @@ export default function Hero() {
             className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-500 p-1"
           >
             <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
-              <span className="text-4xl font-bold text-white">MN</span>
+              <span className="text-4xl font-bold text-white">
+                MN
+              </span>
             </div>
           </motion.div>
           
@@ -41,7 +43,7 @@ export default function Hero() {
               className="space-y-2"
             >
               <h2 className="text-2xl md:text-4xl font-light text-gray-300">
-                Fullstack Developer
+                Développeur Fullstack
               </h2>
               <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full" />
             </motion.div>
@@ -52,8 +54,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
             >
-              Crafting digital experiences with modern technologies. 
-              Passionate about clean code, elegant solutions, and building products that matter.
+              Créer des expériences numériques avec des technologies modernes. 
+              Passionné par le code propre, les solutions élégantes et la création de produits performants.
             </motion.p>
           </div>
           
@@ -82,7 +84,7 @@ export default function Hero() {
       
       <motion.button
         onClick={scrollToAbout}
-        className="absolute bottom-50 left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-colors"
+        className="absolute bottom-45 lg:bottom-20 left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-colors "
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
         whileHover={{ scale: 1.1 }}

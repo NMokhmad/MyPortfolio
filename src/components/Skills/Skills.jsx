@@ -15,11 +15,11 @@ const skillCategories = [
   },
   {
     title: 'Cloud & DevOps',
-    skills: ['Docker learning ...','AWS learning ...'],
+    skills: ['Docker en apprentissage','AWS en apprentissage'],
     color: 'from-emerald-500 to-teal-500'
   },
   {
-    title: 'Tools & Others',
+    title: 'Outils & Autres',
     skills: ['Git/Github', 'Postman', 'Insomnia', 'VS Code', 'Agile/Scrum'],
     color: 'from-orange-500 to-red-500'
   }
@@ -37,7 +37,7 @@ export default function Skills() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Skills & Technologies
+            Compétences et technologies
           </h2>
           <div className="h-1 w-16 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full" />
         </motion.div>

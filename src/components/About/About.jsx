@@ -53,7 +53,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              {['Problem Solving', 'Team Leadership', 'Continuous Learning', 'Innovation'].map((trait) => (
+              {['résolution de problèmes', 'Apprentissage continu', 'Innovation'].map((trait) => (
                 <span 
                   key={trait}
                   className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm text-white"

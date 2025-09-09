@@ -50,7 +50,7 @@ export default function Navigation({ activeSection }) {
                 {item.label}
                 {activeSection === item.id && (
                   <motion.div
-                    className="absolute bottom-1 left-0 right-0 h-0.5 bg-blue-400"
+                    className="absolute left-0 right-0 h-0.5 bg-blue-400"
                     layoutId="activeNav"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

@@ -7,7 +7,7 @@ import './Projects.css';
 const projects = [
   {
     title: 'Portfolio',
-    description: 'Personal developer portfolio built with React and Tailwind CSS. Showcases projects, skills, and contact form with a clean responsive design and smooth user experience.',
+    description: 'Portefeuille de développeurs personnels construit avec React et Tailwind CSS. Présentation des projets, des compétences et un formulaire de contact avec une conception propre et réactive et une expérience utilisateur fluide.',
     tech: ['React', 'Vitejs', 'TailwindCSS', 'Vercel'],
     image: '/assets/Portfolio.png',
     code: 'https://github.com/NMokhmad/Portfolio',
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: 'Boulangerie-du-parc',
-    description: 'E-commerce website for a local bakery built with React and Tailwind CSS. Product catalog with categories, detailed product pages, shopping cart, and responsive design optimized for mobile users.',
+    description: `Site de commerce électronique pour une boulangerie locale construit avec React et Tailwind CSS. Catalogue de produits avec catégories, pages de produits détaillées, panier d'achat et conception réactive optimisée pour les utilisateurs mobiles.`,
     tech: ['React', 'Vitejs', 'TailwindCSS', 'Vercel'],
     image: '/assets/Boulangerie.png',
     code: 'https://github.com/NMokhmad/boulangerie-du-parc',
@@ -27,7 +27,7 @@ const projects = [
   },
   {
     title: 'Weather App',
-    description: 'Weather forecasting app built with React and Tailwind CSS. Displays real-time weather data with location search, dynamic backgrounds, and responsive design for an intuitive user experience.',
+    description: 'Application de prévision météorologique construite avec React et Tailwind CSS. Affiche des données météorologiques en temps réel avec recherche de localisation, arrière-plans dynamiques et conception réactive pour une expérience utilisateur intuitive.',
     tech: ['React','TailwindCSS','Vitejs','Vercel'],
     image: '/assets/weather.png',
     code: 'https://github.com/NMokhmad/boulangerie-du-parc',
@@ -49,7 +49,7 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Featured Projects
+            Projets
           </h2>
           <div className="h-1 w-16 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full" />
         </motion.div>
@@ -113,7 +113,7 @@ export default function Projects() {
                     whileTap={{ scale: 0.95 }}
                   >
                     <ExternalLink size={16} />
-                    <span className="text-sm font-medium">Live Demo</span>
+                    <span className="text-sm font-medium">Site web</span>
                   </motion.a>
                 </div>
               </div>

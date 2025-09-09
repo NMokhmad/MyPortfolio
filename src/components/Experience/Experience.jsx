@@ -1,45 +1,48 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, Briefcase } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import './Experience.css';
 
 const experiences = [
   {
-    title: 'Senior Fullstack Developer',
-    company: 'TechCorp Solutions',
-    location: 'San Francisco, CA',
-    period: '2022 - Present',
-    description: 'Lead development of scalable web applications serving 100k+ users. Architected microservices infrastructure and mentored junior developers.',
+    title: 'Titre professionnel - Développeur web et web mobile (obtenu)',
+    company: `O'Clock`,
+    location: 'France',
+    period: 'Juin 2025',
+    description: `Obtention du titre professionnel à l'issue d'un bootcamp intensif de 8 mois (O'clock)`,
     achievements: [
-      'Reduced application load time by 60% through optimization',
+      `Réalisation du projet Skillswap, un site d'échange de compétences entre plusieurs utilisateurs `,
       'Led team of 5 developers on major platform redesign',
       'Implemented CI/CD pipeline reducing deployment time by 80%'
     ]
   },
   {
-    title: 'Fullstack Developer',
-    company: 'Innovation Labs',
-    location: 'Austin, TX',
-    period: '2020 - 2022',
-    description: 'Developed and maintained multiple client projects using React, Node.js, and cloud technologies. Collaborated with design and product teams.',
+    title: 'Formation - Développeur web et web mobile',
+    company: `O'Clock`,
+    location: 'France',
+    period: 'Septembre 2024 - Mai 2025',
+    description: `Participation à un bootcamp intensif de 8 mois (O'clock) : conception et développement d'applications web modernes. Mise en œuvre de projets complets (front + back) avec React, Node.js et PostgreSQL. Collaboration en équipe Agile, gestion de version avec Git.`,
+    achievements: [
+      `Réalisation du projet Skillswap, un site d'échange de compétences entre plusieurs utilisateurs `,
+      'Led team of 5 developers on major platform redesign',
+      'Implemented CI/CD pipeline reducing deployment time by 80%'
+    ]
+  },
+  {
+    title: 'Certification Opquast - Qualité web',
+    company: 'Opquast',
+    location: 'en distanciel',
+    link: `https://directory.opquast.com/fr/certificat/YZNLCS/`,
+    img:`https://api.opquast.com/badge/YZNLCS.svg`,
+    period: 'janvier 2025',
+    description: 'Obtenue pour la maîtrise des bonnes pratiques web incluant accessibilité, performance, sécurité et ergonomie. Cette certification garantit la qualité et la conformité des sites et applications web développés.',
     achievements: [
       'Built 15+ production applications from scratch',
       'Integrated third-party APIs and payment systems',
       'Mentored 3 junior developers and interns'
     ]
   },
-  {
-    title: 'Junior Developer',
-    company: 'StartupXYZ',
-    location: 'Remote',
-    period: '2019 - 2020',
-    description: 'Started career building responsive web applications and learning modern development practices in an agile startup environment.',
-    achievements: [
-      'Contributed to 10+ feature releases',
-      'Improved code quality through testing implementation',
-      'Collaborated with cross-functional remote teams'
-    ]
-  }
 ];
 
 export default function Experience() {
@@ -54,7 +57,7 @@ export default function Experience() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Experience
+            Formations & Certifications
           </h2>
           <div className="h-1 w-16 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full" />
         </motion.div>
@@ -95,10 +98,20 @@ export default function Experience() {
                       <Calendar size={16} />
                       <span className="text-sm font-medium">{exp.period}</span>
                     </div>
-                    <Briefcase className="text-purple-400" size={20} />
                   </div>
                   
                   <h3 className="text-xl font-bold text-white mb-2">{exp.title}</h3>
+                  {exp.link && (
+                      <div className='flex'>
+                        <a
+                          href={exp.link}
+                          className="flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors"
+                        >
+                          <span className="text-sm font-medium">Voir certification</span>
+                          <ExternalLink className='mb-1' size={16} />
+                        </a>
+                      </div>
+                  )}
                   <div className="flex items-center space-x-2 text-gray-400 mb-3">
                     <span className="font-medium">{exp.company}</span>
                     <span>•</span>
@@ -120,8 +133,6 @@ export default function Experience() {
                         viewport={{ once: true }}
                         className="flex items-start space-x-2"
                       >
-                        <div className="w-1 h-1 bg-purple-400 rounded-full mt-2.5 flex-shrink-0" />
-                        <span className="text-sm text-gray-400">{achievement}</span>
                       </motion.div>
                     ))}
                   </div>

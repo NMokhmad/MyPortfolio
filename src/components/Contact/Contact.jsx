@@ -45,11 +45,11 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Let's Work Together
+            travaillons ensemble
           </h2>
           <div className="h-1 w-16 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6" />
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Have a project in mind? Let's discuss how we can bring your ideas to life.
+            Vous avez un projet en tête ? Discutons de la façon dont nous pouvons donner vie à vos idées.
           </p>
         </motion.div>
 
@@ -90,7 +90,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors"
-                  placeholder="john@example.com"
+                  placeholder="john@exemple.com"
                 />
               </div>
               
@@ -106,7 +106,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors resize-none"
-                  placeholder="Tell me about your project..."
+                  placeholder="Parlez-moi de votre projet ..."
                 />
               </div>
               
@@ -117,7 +117,7 @@ export default function Contact() {
                 whileTap={{ scale: 0.98 }}
               >
                 <Send size={20} />
-                <span>Send Message</span>
+                <span>Envoyer le message</span>
               </motion.button>
             </form>
           </motion.div>
