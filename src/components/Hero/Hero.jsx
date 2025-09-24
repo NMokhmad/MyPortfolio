@@ -21,12 +21,10 @@ export default function Hero() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-500 p-1"
+            className="w-32 h-32 mx-auto rounded-full  p-1"
           >
-            <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
-              <span className="text-4xl font-bold text-white">
-                MN
-              </span>
+            <div className="w-full h-full flex items-center justify-center ">
+              <img className="text-4xl font-bold text-white rounded-full" src='/assets/PP final.jpg'></img>
             </div>
           </motion.div>
           
@@ -84,7 +82,7 @@ export default function Hero() {
       
       <motion.button
         onClick={scrollToAbout}
-        className="absolute bottom-45 2xl:bottom-60 left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-colors "
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-white/10 backdrop-blur-sm border border-white/20 p-4 rounded-full text-white cursor-pointer"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
         whileHover={{ scale: 1.1 }}
