@@ -30,7 +30,7 @@ export default function Navigation({ activeSection }) {
           <motion.div 
             className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}>
-            Mokhmad
+            Développeur Fullstack
           </motion.div>
           
           {/* Desktop Navigation */}

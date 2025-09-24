@@ -5,7 +5,7 @@ import './Skills.css';
 const skillCategories = [
   {
     title: 'Frontend',
-    skills: ['React', 'Tailwind CSS', 'HTML', 'CSS'],
+    skills: ['React','Vite', 'Tailwind CSS', 'HTML', 'CSS'],
     color: 'from-blue-500 to-cyan-500'
   },
   {
